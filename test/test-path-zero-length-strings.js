@@ -1,12 +1,11 @@
-'use strict';
-
 // These testcases are specific to one uncommon behavior in path module. Few
 // of the functions in path module, treat '' strings as current working
 // directory. This test makes sure that the behavior is intact between commits.
 // See: https://github.com/nodejs/node/pull/2106
 
-var tape = require('tape');
-var path = require('../');
+import tape from 'tape';
+import path from '../index.js';
+
 var pwd = process.cwd();
 
 tape('path.join zero-length', function (t) {

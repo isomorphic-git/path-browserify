@@ -1,6 +1,8 @@
-'use strict';
-var tape = require('tape');
-var path = require('../');
+import { fileURLToPath } from 'node:url';
+import tape from 'tape';
+import path from '../index.js';
+
+const __filename = fileURLToPath(import.meta.url);
 
 tape('path.basename', function (t) {
   t.strictEqual(path.basename(__filename), 'test-path-basename.js');

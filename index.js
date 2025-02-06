@@ -22,8 +22,6 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 // USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-'use strict';
-
 function assertPath(path) {
   if (typeof path !== 'string') {
     throw new TypeError('Path must be a string. Received ' + JSON.stringify(path));
@@ -526,4 +524,4 @@ var posix = {
 
 posix.posix = posix;
 
-module.exports = posix;
+export default posix;

@@ -1,7 +1,8 @@
 {
-  "name": "path-browserify",
+  "name": "@isomorphic-git/path-browserify",
+  "type": "module",
   "description": "the path module from node core for browsers",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": {
     "name": "James Halliday",
     "email": "mail@substack.net",
@@ -10,7 +11,7 @@
   "bugs": "https://github.com/browserify/path-browserify/issues",
   "dependencies": {},
   "devDependencies": {
-    "tape": "^4.9.0"
+    "tape": "^5.9.0"
   },
   "homepage": "https://github.com/browserify/path-browserify",
   "keywords": [

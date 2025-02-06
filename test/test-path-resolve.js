@@ -1,6 +1,5 @@
-'use strict';
-var tape = require('tape');
-var path = require('../');
+import tape from 'tape';
+import path from '../index.js';
 
 var windowsTests =
     // arguments                               result
