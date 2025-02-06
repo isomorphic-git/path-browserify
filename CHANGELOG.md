@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.1.0
+* Convert to ES Module
+* Export methods individually to support tree shaking
+
 ## 1.0.1
 * Fix a duplicate test name.
 * Tweak LICENSE text so Github can recognise it.
