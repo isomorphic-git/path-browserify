@@ -1,4 +1,4 @@
-# path-browserify [![Build Status](https://travis-ci.org/browserify/path-browserify.png?branch=master)](https://travis-ci.org/browserify/path-browserify)
+# path-browserify [![Tests](https://github.com/isomorphic-git/path-browserify/actions/workflows/test.yml/badge.svg)](https://github.com/isomorphic-git/path-browserify/actions/workflows/test.yml)
 
 > The `path` module from Node.js for browsers
 
