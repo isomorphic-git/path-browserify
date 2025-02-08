@@ -8,22 +8,30 @@ This implements the Node.js [`path`][path] module for environments that do not h
 
 ## Install
 
-You usually do not have to install `path-browserify` yourself! If your code runs in Node.js, `path` is built in. If your code runs in the browser, bundlers like [browserify](https://github.com/browserify/browserify) or [webpack](https://github.com/webpack/webpack) include the `path-browserify` module by default.
-
-But if none of those apply, with npm do:
-
 ```
-npm install path-browserify
+npm install @isomorphic-git/path-browserify
 ```
 
 ## Usage
 
 ```javascript
-var path = require('path')
+import path from '@isomorphic-git/path';
 
-var filename = 'logo.png';
-var logo = path.join('./assets/img', filename);
+const filename = 'logo.png';
+const logo = path.join('./assets/img', filename);
 document.querySelector('#logo').src = logo;
+```
+
+Methods under `path` can be imported individually.
+
+```javascript
+import { join } from '@isomorphic-git/path';
+```
+
+If your project uses CommonJS, this is also supported.
+
+```javascript
+const path = require('@isomorphic-git/path');
 ```
 
 ## API
