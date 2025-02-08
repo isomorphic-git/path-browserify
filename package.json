@@ -7,6 +7,12 @@
     "build": "rollup -c",
     "test": "node test"
   },
+  "files": [
+    "index.cjs",
+    "index.d.ts",
+    "index.js",
+    "README.md"
+  ],
   "exports": {
     ".": {
       "import": "./index.js",
