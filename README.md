@@ -15,7 +15,7 @@ npm install @isomorphic-git/path-browserify
 ## Usage
 
 ```javascript
-import path from '@isomorphic-git/path';
+import path from '@isomorphic-git/path-browserify';
 
 const filename = 'logo.png';
 const logo = path.join('./assets/img', filename);
@@ -25,13 +25,13 @@ document.querySelector('#logo').src = logo;
 Methods under `path` can be imported individually.
 
 ```javascript
-import { join } from '@isomorphic-git/path';
+import { join } from '@isomorphic-git/path-browserify';
 ```
 
 If your project uses CommonJS, this is also supported.
 
 ```javascript
-const path = require('@isomorphic-git/path');
+const path = require('@isomorphic-git/path-browserify');
 ```
 
 ## API
