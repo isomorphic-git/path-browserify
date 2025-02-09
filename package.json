@@ -4,7 +4,21 @@
   "description": "The path module from Node.js core for browsers",
   "version": "1.1.0",
   "scripts": {
-    "test": "tape test/"
+    "build": "rollup -c",
+    "test": "node test"
+  },
+  "files": [
+    "index.cjs",
+    "index.d.ts",
+    "index.js",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs",
+      "types": "./index.d.ts"
+    }
   },
   "author": {
     "name": "James Halliday",
@@ -12,8 +26,9 @@
     "url": "http://substack.net"
   },
   "bugs": "https://github.com/isomorphic-git/path-browserify/issues",
-  "dependencies": {},
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "rollup": "^4.34.6",
     "tape": "^5.9.0"
   },
   "homepage": "https://github.com/isomorphic-git/path-browserify",
@@ -27,8 +42,5 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/isomorphic-git/path-browserify.git"
-  },
-  "scripts": {
-    "test": "node test"
   }
 }
